@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Card Hover Effect </title>
+</head>
+<body>
+ 
+    <div class="container-card">
+        <h1 class="text-center"> Nuestro Trabajo</h1>
+        <br><br>
+        <div class="row">
+            <div class="col-4-lg">
+                <div class="card" style="width:23rem;">
+                    <img src="./imagenes/img2.png" alt="card one" class="card-img-top"> 
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cover one</h5>
+                        <p class="card-text text-center">
+                            Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                             Accusantium reprehenderit maiores, 
+                             numquam sequi labore laboriosam?
+                             <br><br>
+                             <a href="#" class="btn btn-secondary">Read</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4-lg ml-3">
+                    <div class="card" style="width:23rem;">
+                            <img src="./imagenes/img3.png" alt="card two" class="card-img-top"> 
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Cover two</h5>
+                                <p class="card-text text-center">
+                                    Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit.
+                                     Accusantium reprehenderit maiores, 
+                                     numquam sequi labore laboriosam?
+                                     <br><br>
+                                     <a href="#" class="btn btn-secondary">Read</a>
+                                </p>
+                            </div>
+                        </div>  
+            </div>
+            <div class="col-4-lg ml-3">
+                    <div class="card" style="width:23rem;">
+                            <img src="./imagenes/img4.jpeg" alt="card three" class="card-img-top"> 
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Cover three</h5>
+                                <p class="card-text text-center">
+                                    Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit.
+                                     Accusantium reprehenderit maiores, 
+                                     numquam sequi labore laboriosam?
+                                     <br><br>
+                                     <a href="#" class="btn btn-secondary">Read</a>
+                                </p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $('.col-4-lg').hover(
+            function(){
+                $(this).animate({
+                    marginTop:"-=1%",
+                },200);
+            },
+
+            function(){
+                $(this).animate({
+                    marginTop:"0%"
+                },200);
+            }
+        );
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
